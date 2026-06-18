@@ -4,99 +4,168 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr. Shalini Saha</title>
+<title>Dr. Shalini Saha | Researcher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f7fa;
-    color:#333;
+font-family:'Poppins',sans-serif;
+background:#f7f9fc;
+color:#333;
+line-height:1.8;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#081f3f;
+padding:15px 0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
 }
 
 header{
-    background:#0b2545;
-    color:white;
-    padding:60px 20px;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
+background:#0b2545;
+color:white;
+padding:120px 40px 80px;
 }
 
 .hero{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
 }
 
-.photo img{
-    width:220px;
-    border-radius:50%;
-    border:5px solid white;
+.hero img{
+width:260px;
+height:260px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
 }
 
-.info h1{
-    font-size:48px;
-    margin-bottom:10px;
+.hero-text h1{
+font-size:4rem;
+margin-bottom:15px;
 }
 
-.info h2{
-    font-weight:normal;
-    margin-bottom:20px;
+.hero-text h2{
+font-weight:400;
+margin-bottom:20px;
 }
 
 .btn{
-    display:inline-block;
-    padding:10px 18px;
-    margin-right:10px;
-    margin-top:10px;
-    text-decoration:none;
-    background:white;
-    color:#0b2545;
-    border-radius:5px;
-    font-weight:bold;
+display:inline-block;
+padding:12px 20px;
+margin:10px 10px 0 0;
+background:white;
+color:#0b2545;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
 }
 
 section{
-    padding:50px 20px;
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2.2rem;
+margin-bottom:30px;
+color:#0b2545;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+margin-bottom:25px;
 }
 
-ul li{
-    margin-bottom:10px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 footer{
-    background:#0b2545;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#081f3f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:2.5rem;
+}
+
 }
 
 </style>
-
 </head>
+
 <body>
 
-<header>
-<div class="container">
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#teaching">Teaching</a></li>
+<li><a href="#awards">Awards</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header id="home">
+
 <div class="hero">
 
-<div class="photo">
 <img src="Shalini123.jpg" alt="Dr Shalini Saha">
-</div>
 
-<div class="info">
+<div class="hero-text">
+
 <h1>Dr. Shalini Saha</h1>
 
 <h2>
@@ -116,50 +185,168 @@ LinkedIn
 </div>
 
 </div>
-</div>
-</header>
 
-<section>
-<div class="container">
+</header>
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
 
 <div class="card">
 
-<h2>About Me</h2>
-
 <p>
-I am a Postdoctoral Research Fellow at the Department of Aerospace Engineering, IISc Bangalore. My research focuses on wave propagation, nonlocal elasticity, strain-gradient mechanics, mathematical modeling, and computational mechanics.
+I am a Postdoctoral Research Fellow in the Department of Aerospace Engineering at the Indian Institute of Science (IISc), Bangalore. My research focuses on wave propagation in advanced materials, nonlocal elasticity, strain-gradient mechanics, computational mechanics, and mathematical modeling. I am particularly interested in analytical and computational approaches for understanding dynamic behavior in layered and heterogeneous structures.
 </p>
 
 </div>
 
-</div>
 </section>
 
-<section>
-<div class="container">
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+<h3>Ph.D. in Applied Mathematics (2015–2021)</h3>
+<p>IIT (ISM) Dhanbad</p>
+</div>
+
+<div class="card">
+<h3>M.Sc. Mathematics and Computing (2013–2015)</h3>
+<p>IIT (ISM) Dhanbad</p>
+</div>
+
+<div class="card">
+<h3>B.Sc. Mathematics (2010–2013)</h3>
+<p>St. Xavier's College, Ranchi University</p>
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="section-title">Research Areas</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Wave Propagation</h3>
+<p>Rayleigh waves, SH waves, guided waves, layered structures and surface acoustic waves.</p>
+</div>
+
+<div class="card">
+<h3>Nonlocal Elasticity</h3>
+<p>Eringen nonlocal theory, strain-gradient models and size-dependent continuum mechanics.</p>
+</div>
+
+<div class="card">
+<h3>Computational Mechanics</h3>
+<p>Dynamic stiffness methods, spectral finite elements and numerical simulation.</p>
+</div>
+
+<div class="card">
+<h3>Physics-Informed AI</h3>
+<p>Data-driven mechanics and machine learning assisted physical modeling.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="publications">
+
+<h2 class="section-title">Selected Publications</h2>
+
+<div class="card">
+<ul>
+<li>Rayleigh-type Surface Waves in Transversely Isotropic and Soil Layered Structure: A Potential-Based Modelling Approach, Mathematics and Mechanics of Solids (2026).</li>
+
+<li>Characteristic Analysis of Impedance Controlled Rayleigh-Type Waves, Archive of Applied Mechanics (2026).</li>
+
+<li>Analytical Study of Torsional Wave Behavior in Graded Poroelastic Layer Bonded to Viscoelastic Foundation, Mechanics of Solids (2025).</li>
+
+<li>Nonlocal Analysis of Rayleigh-Type Wave Propagating in a Gradient Layered Structure, EPJ Plus (2023).</li>
+
+<li>Rayleigh-Type Wave Propagation in Exponentially Graded Initially Stressed Composite Structure, Applied Mathematics and Computation (2022).</li>
+
+<li>Dynamic Analysis of Wave Propagation and Buckling Phenomena in Carbon Nanotubes, Wave Motion (2021).</li>
+</ul>
+</div>
+
+</section>
+
+<section id="teaching">
+
+<h2 class="section-title">Teaching</h2>
 
 <div class="card">
 
-<h2>Research Interests</h2>
-
 <ul>
-<li>Wave Propagation in Layered Media</li>
-<li>Nonlocal Elasticity</li>
-<li>Strain Gradient Mechanics</li>
-<li>Computational Mechanics</li>
-<li>Mathematical Modeling</li>
-<li>Physics-Informed Machine Learning</li>
+<li>Calculus</li>
+<li>Linear Algebra</li>
+<li>Differential Equations</li>
+<li>Graph Theory</li>
+<li>Probability and Statistics</li>
+<li>Discrete Mathematics</li>
+<li>Numerical Methods</li>
 </ul>
 
 </div>
 
+</section>
+
+<section id="awards">
+
+<h2 class="section-title">Awards & Achievements</h2>
+
+<div class="card">
+
+<ul>
+<li>Axis Bank Postdoctoral Award, IISc Bangalore (2023)</li>
+<li>Junior & Senior Research Fellowship, IIT (ISM) Dhanbad</li>
+<li>Qualified IIT JAM</li>
+<li>Merit-cum-Means Scholarship</li>
+<li>Ranked 4th in Graduation</li>
+</ul>
+
 </div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Email:</strong> shalinisaha.ism@gmail.com</p>
+
+<p>
+<strong>Google Scholar:</strong>
+<a href="https://scholar.google.com/citations?user=Oip7IN4AAAAJ&hl=en" target="_blank">
+View Profile
+</a>
+</p>
+
+<p>
+<strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/drshalini-saha/" target="_blank">
+View Profile
+</a>
+</p>
+
+</div>
+
 </section>
 
 <footer>
-© Dr. Shalini Saha | IISc Bangalore
+
+<p>
+© 2026 Dr. Shalini Saha | Indian Institute of Science (IISc), Bangalore
+</p>
+
 </footer>
 
 </body>
 </html>
-```
+
+
