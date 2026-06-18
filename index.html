@@ -1,13 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dr. Shalini Saha | Researcher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f9fc;
+color:#333;
+line-height:1.8;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#081f3f;
+padding:15px 0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+header{
+background:#0b2545;
+color:white;
+padding:90px 40px 40px;
+}
+
+.hero{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
+}
+
+.hero-text h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero-text h2{
+font-weight:400;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin:10px 10px 0 0;
+background:white;
+color:#0b2545;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+}
+
+section{
+padding:40px 8%;
+}
+
+.section-title{
+font-size:2.2rem;
+margin-bottom:30px;
+color:#0b2545;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+margin-bottom:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+footer{
+background:#081f3f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
 <nav>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
 <li><a href="#research">Research</a></li>
 <li><a href="#publications">Publications</a></li>
-<li><a href="#experience">Experience</a></li>
 <li><a href="#teaching">Teaching</a></li>
 <li><a href="#awards">Awards</a></li>
-<li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -16,7 +163,7 @@
 
 <div class="hero">
 
-<img src="ShaliniI.jpg" alt="Dr Shalini Saha">
+<img src="ShaliniI.jpg" alt="Dr Shalini Saha" style="width:250px;height:250px;border-radius:50%;object-fit:cover;border:5px solid white;">
 
 <div class="hero-text">
 
@@ -41,7 +188,6 @@ LinkedIn
 </div>
 
 </header>
-```html
 <section id="about">
 
 <h2 class="section-title">About Me</h2>
@@ -49,76 +195,195 @@ LinkedIn
 <div class="card">
 
 <p>
-I am a Postdoctoral Research Fellow in the Department of Aerospace Engineering at the Indian Institute of Science (IISc), Bangalore. My research interests lie in wave propagation, nonlocal and strain-gradient continuum theories, computational mechanics, and mathematical modeling of advanced materials and structures. I develop analytical and numerical frameworks to study the dynamic behavior of layered, heterogeneous, and architected systems across multiple length scales. More recently, I have been exploring the integration of physics-based modeling with data-driven approaches to address challenging problems in engineering mechanics. My work sits at the intersection of applied mathematics, computational science, and engineering, with applications in aerospace, mechanical, and civil systems.
-</p>
-
-<p>
+I am a Postdoctoral Research Fellow in the Department of Aerospace Engineering at the Indian Institute of Science (IISc), Bangalore. My research interests lie in wave propagation, nonlocal and strain-gradient continuum 
+theories, computational mechanics, and mathematical modeling of advanced materials and structures. I develop analytical and numerical frameworks to study the dynamic behavior of layered, heterogeneous, 
+and architected systems across multiple length scales. More recently, I have been exploring the integration of physics-based modeling with data-driven approaches to address challenging problems in engineering mechanics. 
+My work sits at the intersection of applied mathematics, computational science, and engineering, with applications in aerospace, mechanical, and civil systems.
+ <p>
 I welcome interactions with students and researchers interested in applied mathematics, computational mechanics, wave propagation, and interdisciplinary engineering research.
 </p>
 
 </div>
 
 </section>
+  </section>
 
 <section id="experience">
 
-<h2 class="section-title">Professional Experience</h2>
+ <h2 class="section-title">Professional Experience</h2>
 
 <div class="card">
-<h3>Postdoctoral Research Fellow | IISc Bangalore</h3>
-<p>2023–Present</p>
+<h3>Postdoctoral Research Fellow (2023–Present)</h3>
+<p>
+Department of Aerospace Engineering<br>
+Indian Institute of Science (IISc), Bangalore
+</p>
 </div>
 
 <div class="card">
-<h3>Assistant Professor | KIIT University</h3>
-<p>2022–Present (On Study Leave)</p>
+<h3>Assistant Professor (2022–Present)</h3>
+<p>
+Department of Mathematics<br>
+KIIT Deemed to be University, Bhubaneswar
+<br><em>(On Study Leave)</em>
+</p>
 </div>
 
 <div class="card">
-<h3>Assistant Professor | ITER Bhubaneswar</h3>
-<p>2020–2022</p>
+<h3>Assistant Professor (2020–2022)</h3>
+<p>
+Institute of Technical Education and Research (ITER), Bhubaneswar
+</p>
 </div>
 
-</section>
+
 
 <section id="education">
 
 <h2 class="section-title">Education</h2>
 
 <div class="card">
-<h3>Ph.D. in Applied Mathematics</h3>
-<p>IIT (ISM) Dhanbad | 2015–2021</p>
+<h3>Ph.D. in Applied Mathematics (2015–2021)</h3>
+<p>IIT (ISM) Dhanbad</p>
 </div>
 
 <div class="card">
-<h3>M.Sc. Mathematics and Computing</h3>
-<p>IIT (ISM) Dhanbad | 2013–2015</p>
+<h3>M.Sc. Mathematics and Computing (2013–2015)</h3>
+<p>IIT (ISM) Dhanbad</p>
 </div>
 
 <div class="card">
-<h3>B.Sc. Mathematics</h3>
-<p>St. Xavier's College, Ranchi University | 2010–2013</p>
+<h3>B.Sc. Mathematics (2010–2013)</h3>
+<p>St. Xavier's College, Ranchi University</p>
 </div>
 
 </section>
-```css
-section{
-padding:25px 8%;
-}
 
-.section-title{
-font-size:1.8rem;
-margin-bottom:15px;
-color:#0b2545;
-}
+<section id="research">
 
-.card{
-background:white;
-padding:15px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
-margin-bottom:10px;
-}
+<h2 class="section-title">Research Areas</h2>
 
+<div class="grid">
+
+<div class="card">
+<h3>Wave Propagation</h3>
+<p>Rayleigh waves, SH waves, guided waves, layered structures and surface acoustic waves.</p>
+</div>
+
+<div class="card">
+<h3>Nonlocal Elasticity</h3>
+<p>Eringen nonlocal theory, strain-gradient models and size-dependent continuum mechanics.</p>
+</div>
+
+<div class="card">
+<h3>Computational Mechanics</h3>
+<p>Dynamic stiffness methods, spectral finite elements and numerical simulation.</p>
+</div>
+
+<div class="card">
+<h3>Physics-Informed AI</h3>
+<p>Data-driven mechanics and machine learning assisted physical modeling.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="publications">
+
+<h2 class="section-title">Selected Publications</h2>
+
+<div class="card">
+<ul>
+<li>Rayleigh-type Surface Waves in Transversely Isotropic and Soil Layered Structure: A Potential-Based Modelling Approach, Mathematics and Mechanics of Solids (2026).</li>
+
+<li>Characteristic Analysis of Impedance Controlled Rayleigh-Type Waves, Archive of Applied Mechanics (2026).</li>
+
+<li>Analytical Study of Torsional Wave Behavior in Graded Poroelastic Layer Bonded to Viscoelastic Foundation, Mechanics of Solids (2025).</li>
+
+<li>Nonlocal Analysis of Rayleigh-Type Wave Propagating in a Gradient Layered Structure, EPJ Plus (2023).</li>
+
+<li>Rayleigh-Type Wave Propagation in Exponentially Graded Initially Stressed Composite Structure, Applied Mathematics and Computation (2022).</li>
+
+<li>Dynamic Analysis of Wave Propagation and Buckling Phenomena in Carbon Nanotubes, Wave Motion (2021).</li>
+</ul>
+</div>
+
+</section>
+
+<section id="teaching">
+
+<h2 class="section-title">Teaching</h2>
+
+<div class="card">
+
+<ul>
+<li>Calculus</li>
+<li>Linear Algebra</li>
+<li>Differential Equations</li>
+<li>Graph Theory</li>
+<li>Probability and Statistics</li>
+<li>Discrete Mathematics</li>
+<li>Numerical Methods</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="awards">
+
+<h2 class="section-title">Awards & Achievements</h2>
+
+<div class="card">
+
+<ul>
+<li>Axis Bank Postdoctoral Award, IISc Bangalore (2023)</li>
+<li>Junior & Senior Research Fellowship, IIT (ISM) Dhanbad</li>
+<li>Qualified IIT JAM</li>
+<li>Merit-cum-Means Scholarship</li>
+<li>Secured rank in Graduation</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Email:</strong> shalinisaha.ism@gmail.com</p>
+
+<p>
+<strong>Google Scholar:</strong>
+<a href="https://scholar.google.com/citations?user=Oip7IN4AAAAJ&hl=en" target="_blank">
+View Profile
+</a>
+</p>
+
+<p>
+<strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/drshalini-saha/" target="_blank">
+View Profile
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Dr. Shalini Saha | Indian Institute of Science (IISc), Bangalore
+</p>
+
+</footer>
+
+</body>
+</html>
 
 
